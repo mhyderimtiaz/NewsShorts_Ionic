@@ -1,0 +1,109 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+.weather {
+    padding-bottom: 20px;
+}
+
+.weather > div {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    padding: 8px
+    font-size  1.2rem !important;    
+}
+.weather img {
+    width: 120px;
+}
+
+.weather div p {
+    padding: 10px;
+    font-size: 3rem;
+    color: oldlace;
+    margin: 0px;
+    margin-left: 10%;
+}
+.checkWeather {
+    padding: 20px;
+    display: block;
+    color: #222;
+    text-decoration: none;
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 40%;
+    margin: 0 auto;
+    margin-inline-start: 35% ;
+    border-radius: 20px;
+}
+
+ion-input {
+    background-color:#4a6c8d;
+    border: 6px solid #fff ;
+    font-size: 1.2rem !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    margin-left: 20px !important;
+   
+}
+.div.big{
+    margin: 50%;
+    
+}
+.big {
+    font-size: 16rem;
+    font-style: bold;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+ 
+button:disabled {
+    background: rgb(214, 214, 214);
+    cursor: not-allowed;
+}
+ @media screen and (max-width: 900px) {
+     
+    .main h2 {
+        font-size: 250%;
+        font-style: italic;
+        line-height: 4rem;
+        width: 60%;
+        margin: 20% auto;
+        margin-left: 25%;
+        text-align: center;
+        color: #A52A2A;
+    }
+
+
+     .main > div.details {
+        width: 90%;
+    }
+ }
+
+ @import '~firebaseui/dist/firebaseui.css';

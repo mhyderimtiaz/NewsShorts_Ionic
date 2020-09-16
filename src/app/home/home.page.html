@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      NewsShorts
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-header *ngIf="!hasVerifiedEmail" padding class="verify-email">
+  <div>
+    Please send a verification email and verify your account
+  </div> -->
+  <!-- <div> -->
+    <!-- <ion-button color="secondary" (click)="sendVerificationEmail()">Send Verification Email</ion-button> -->
+    <ion-button size="small"  (click)="reload()">Refresh</ion-button> 
+
+    <!-- </div> -->
+  <!-- <div *ngIf="sentTimestamp">
+    Verification email sent at {{sentTimestamp | date:'medium'}}
+  </div> -->
+<!-- </ion-header> -->
+
+<ion-content padding>
+
+  <img src="../assets/Logo.png" style="width : 100% ; height : 60%"  >
+
+  <firebase-ui></firebase-ui>
+
+  <!-- <h1 *ngIf="afAuth.auth.currentUser">
+    Welcome {{afAuth.auth.currentUser.displayName}}!
+  </h1>-->
+
+  
+ </ion-content>
